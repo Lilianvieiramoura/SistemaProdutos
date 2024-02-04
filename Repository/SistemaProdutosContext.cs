@@ -4,7 +4,7 @@ using sistemaProdutos.Models;
 namespace sistemaProdutos.Repository;
 public class SistemaProdutosContext : DbContext
 {
-  public DbSet<Produto> Cities { get; set; }
+  public DbSet<Produto> Produtos { get; set; }
 
   public SistemaProdutosContext(DbContextOptions<SistemaProdutosContext> options) : base(options) { }
   public SistemaProdutosContext() { }

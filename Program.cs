@@ -1,7 +1,12 @@
+using sistemaProdutos.Repository;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
+builder.Services.AddDbContext<SistemaProdutosContext>();
+
 
 var app = builder.Build();
 
