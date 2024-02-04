@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using sistemaProdutos.Models;
 
-namespace TrybeHotel.Repository;
+namespace sistemaProdutos.Repository;
 public class SistemaProdutosContext : DbContext
 {
   public DbSet<Produto> Cities { get; set; }
